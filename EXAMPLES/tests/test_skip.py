@@ -10,6 +10,8 @@ def test_one():  # Normal test
 def test_two():
     assert 1
 
+# pytest.setskip(test_two, reason="...")
+
 
 # Skip this test if current platform is not Windows
 @pytest.mark.skipif(

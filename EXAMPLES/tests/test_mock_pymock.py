@@ -1,4 +1,3 @@
-import pytest  # Needed for test runner
 from spamlib import spam
 
 SEARCH_TERM = 'bug'

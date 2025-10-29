@@ -14,10 +14,12 @@ def colors():
 
 @pytest.fixture
 def before_after():
+    # create temp file
     print("\n******* BEFORE! *******")
     yield 100
     print("\n******* AFTER! *******")
-
+    # remove temp file
+    
 def test_get_five_returns_five(spam):
     assert spam.get_five() == 5
 
