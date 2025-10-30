@@ -9,7 +9,7 @@ session.headers.update(
     {
         'token': TOKEN, 
         'UserAgent': "cja-tech.com,jstrickler@gmail.com", 
-        'Accept': "application/GeoJSON"
+        'Accept': "*/*"
     }
 )
 
@@ -23,5 +23,7 @@ response = session.get(
     },
     timeout=10,
 )
+
+# print(response.text)
 
 pprint(response.json())
