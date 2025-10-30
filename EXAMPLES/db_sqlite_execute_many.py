@@ -81,7 +81,7 @@ def populate_database(conn, cursor):
             # fruit data is iterable of iterables
             #  OR, iterable of dictionaries
             cursor.executemany(SQL_INSERT_ROW, fruit_data)  
-        except sqlite3.DatabaseError as err:
+        except Exception as err:  # sqlite3.DatabaseError as err:
             print(err)
             conn.rollback()
         else:

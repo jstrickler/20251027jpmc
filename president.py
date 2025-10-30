@@ -1,5 +1,6 @@
 from datetime import date
 
+# "DATA/presidents.db"
 
 class President():
     def __init__(self, index):

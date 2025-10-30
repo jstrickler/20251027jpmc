@@ -2,11 +2,11 @@ import sqlite3
 
 TERMS_TO_UPDATE = [1, 5, 19, 22, 36]
 
-PARTY_UPDATE = '''
+PARTY_UPDATE = """
 update presidents 
 set party = "SURPRISE!"
 where termnum = ?
-'''  # ? is SQLite3 placeholder for SQL statement parameter; different DBMSs use different placeholders
+"""  # ? is SQLite3 placeholder for SQL statement parameter; different DBMSs use different placeholders
 
 PARTY_QUERY = """
 select termnum, firstname, lastname, party
